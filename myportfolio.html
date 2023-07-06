@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="myportfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+              <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+            <div>
+                <div class="header-text">
+                    <h1>Ishika Ashish</h1>
+                    <p>Hi, I'm a <span>Web Developer</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----about------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/my.png.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><u>About Me</u></h1>
+                    <p>I am a Computer Science Student at Birla Institiute of Technology.I am highly motivated front-end developer.I'm working on technologies like HTML,CSS,Javascript.I am passionate about developing and learning complex skills.My interests are in Web Development and Cyber Security.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Interests')">Interest</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents" active-tab id="interests">
+                        <ul>
+                        <li><span>Web Developer</span><br>Programming and Desigining</li>
+                        <li><span>Ethical Hacking</span><br>Hacking</li>
+                        <li><span>Cyber Security</span><br>Securing digital life</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                    <li><span>2023-current</span><br>training at XYZ Institue</li>
+                    <li><span>2020-2022</span><br>training from Internshala</li>
+                    <li><span>2019-2020</span><br>course training from nptel</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                <li><span>2022</span><br>Btech from BIT mesra</li>
+                <li><span>2022</span><br>Diploma from Govt polytechnic.</li>
+                <li><span>2019</span><br>Matriculation</li>
+            </ul>
+        </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+   <!---------------services----------------->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title"><u>My Services</u></h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code" style="color: #ebeef4;"></i>
+                <h2>Web Design</h2>
+                <p>To plan, to create and to code internet sites and web pages, many of which combine text with sounds, pictures, graphics and video. <br> It is responsible for creating the design and layout of a website or web pages</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-shield-halved" style="color: #dfe0e2;"></i>
+                <h2>Cyber Security</h2>
+                <p> The collective methods, technologies, and processes to help protect the confidentiality, integrity, and availability of computer systems, networks and data, against cyber-attacks or unauthorized access.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-regular fa-hat-cowboy" style="color: #d1d3d6;"></i>
+                <h2>Ethical Hacking</h2>
+                <p> The authorized attempt to gain access to computer systems, applications or data by duplicating the strategies and methods that would be used by a malicious hacker.</p>
+                <a href="#">Learn more</a>
+            </div>
+            
+        </div>
+    </div>
+   </div>
+   <!------------------contact-------------------------->
+   <div id="contact"></div>
+         <div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p> <i class="fa-solid fa-paper-plane"></i> ishikaashish2608@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91 98346XXXXX</p>
+            <div class="social-icons">
+                <a href="http://facebook.com/"><i class="fa-brands fa-facebook" style="color: #0654db;"></i></a>
+                <a href=""><i class="fa-brands fa-twitter-square" style="color: #e7e8e9;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram" style="color: #ee035d;"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin" style="color: #0654db;"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp" style="color: #17a704;"></i></a>
+            </div>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit Now</button>
+            </form>
+            <span id="msg"></span>
+            </span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright" style="color: #dee2e7;"></i> Ishika.Designed by Ishika</p>
+    </div>
+   </div>
+     
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxAEXKNtL57xAroYALmV--jbxWu-D6oyZDSTG9bs2_wNbxdyYAp7aV_tFGdpX03A9aK/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHtml = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
